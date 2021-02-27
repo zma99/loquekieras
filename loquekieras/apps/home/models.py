@@ -7,7 +7,7 @@ class Producto(models.Model):
     modelo = models.CharField(max_length=20)
     descripcion = models.CharField(max_length=50)
     id = models.AutoField(primary_key = True)
-    precio = models.FloatFlield(max_length=15)
+    precio = models.IntegerField(default = 0)
 
     
 
@@ -16,7 +16,7 @@ class Usuario(models.Model):
     email = models.EmailField(max_length=20)
     nombre = models.CharField(max_length=10)
     apellido = models.CharField(max_length=15)
-    edad = models.IntegerField(max_length=3)
+    fecha_Nacimiento= models.DateField()
     direccion = models.CharField(max_length=50)
     ciudad = models.CharField(max_length=15)
     provincia = models.CharField(max_length=15)
