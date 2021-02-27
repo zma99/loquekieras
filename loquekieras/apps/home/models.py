@@ -7,6 +7,7 @@ class Producto(models.Model):
     modelo = models.CharField(max_length=20)
     descripcion = models.CharField(max_length=50)
     id = models.AutoField(primary_key = True)
+    precio = models.FloatFlield(max_length=15)
 
     
 
