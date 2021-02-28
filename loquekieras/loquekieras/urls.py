@@ -19,5 +19,7 @@ from apps.home.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home, name = 'home')
+    path('', home, name = 'home'),
+    path('registro/', registrar_usuario, name = 'registrar_usuario'),
+    path('perfil/', perfil, name = 'perfil'),
 ]
