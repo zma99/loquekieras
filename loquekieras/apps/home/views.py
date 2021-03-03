@@ -22,4 +22,4 @@ def registrar_usuario(request):
     return render(request, 'registrar_usuario.html', contexto)
 
 def perfil(request):
-    pass
+    return render(request, 'perfil.html')
